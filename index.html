@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4714/4714572.png" type="img/png">
+</head>
+
+<body>
+    <form action="script.php" method="post">
+        <fieldset>
+            <legend><b>Основная информация</b></legend>
+            <div>
+                <label for="nickname">Кличка питомца</label>
+                <input type="text" id="nickname">
+            </div>
+            <div>
+                <label for="name">Имя владельца</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="phone">Номер телефона</label>
+                <input type="text" id="phone">
+            </div>
+        </fieldset>
+        <h4>Выберите породу</h4>
+        <select>
+            <option value="#" hidden>выберите породу</option>
+            <option value="1">Мэйн-кун</option>
+            <option value="2">Шотландская вислоухая</option>
+            <option value="3">Рэгдол</option>
+            <option value="4">Саванна</option>
+        </select>
+        <h4>Чем питается:</h4>
+        <div>
+            <input type="checkbox" value="1">Сухой корм
+        </div>
+        <div>
+            <input type="checkbox" value="2">Влажный корм
+        </div>
+        <div>
+            <input type="checkbox" value="3">Натуральный корм
+        </div>
+        <div>
+            <b>Пол питомца</b>
+            <br>
+            <label>
+                Самка<input type="radio" name="sex" value="female">
+            </label>
+            <br>
+            <label>
+                Самец<input type="radio" name="sex" value="male">
+            </label>
+        </div>
+        <h4>Комментарии</h4>
+        <div>
+            <textarea rows="15" name="comments"></textarea>
+        </div>
+        <div>
+            <label for="foto">Можете добавить фото питомца</label>
+            <input type="file" id="foto">
+        </div>
+        <button>Отправить</button>
+    </form>
+
+</body>
+
+</html>
